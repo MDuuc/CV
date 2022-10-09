@@ -1,0 +1,152 @@
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    #content #content-band {
+        padding: 64px 16px;
+    }
+    #content #content-tour {
+        padding: 64px 16px;
+    }
+
+    .member-list {
+        display: flex;
+    }
+
+
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    #content #content-band {
+        padding: 64px 16px;
+    }
+    #content #content-tour {
+        padding: 64px 16px;
+    }
+    #slider .text-description {
+        display: none;
+    }
+    #slider .text-heading {
+        font-size: 18px;
+    }
+    #slider .text-content {
+        margin-bottom: 5px;
+    }
+    .member-list {
+        text-align: center;
+    }
+    #content .about-img {
+        width: auto;
+    }
+    #tour #ticket-block {
+        display: flex;
+        flex-direction: column;
+    }
+    #ticket-block .ticket-place {
+        padding: 16px 8px;
+        width: auto;
+    }
+    #contact .contact-address {
+        width: auto;
+        display: block;
+        padding-top: 16px;
+    }
+    #contact #contact-register {
+        width: auto;
+    }
+    #contact .contact-detail {
+        width: auto;
+    }
+    #contact-block {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #header .close-btn,
+    #header .bar-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+    }
+    #nav{
+        display: none;
+    }
+    #header .search-btn {
+        display: none;
+    }
+    /* begin modal */
+    .mobile{
+        display: block;
+    }
+    .nav-overlay{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0, 0, 0.3);
+        animation: fadeIn ease 0.2s;
+        display: none;
+    }
+    .nav-header{
+        position: absolute;
+        top: 0;
+        left:0;
+        right: 0;
+        height: 46.5px;
+        background-color: rgba(0,0, 0, 0.6);
+    }
+    .nav-input:checked ~ .nav-overlay{
+        display:block;
+    }
+    .nav-input:checked ~ .nav-mobile{
+        transform: translateX(0);
+        
+    }
+    .nav-mobile{
+        position: fixed;
+        background-color: #fff;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 60%;
+        transform: translateX(+100%);
+        transition: transform ease-in 0.2s;
+    }
+    .nav-mobile li a{
+        text-decoration: none;
+        line-height: 46.5px;
+        padding: 0 24px;
+        color: #000;
+    }
+    .nav-mobile li{
+        border-bottom: #000;
+    }
+    .nav-mobile ul{
+        list-style-type: none;
+        display: block;
+    }
+    .nav-mobile>ul{
+        margin-top: calc(46.5px + 4px);
+    }
+    
+    .subnav-mobile li{
+        display: none;
+    }
+
+    .nav-input-more:checked ~ .subnav-mobile li{
+        display: block;
+    }
+    .subnav-mobile{
+        position: absolute;
+    }
+    
+    @keyframes fadeIn{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+
+    }
+}

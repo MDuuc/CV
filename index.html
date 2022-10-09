@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Band</title>
+    <link rel="icon" href="./assets/img/favicon.ico"type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media-query.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/fontawesome-free-6.1.2-web/css/all.css">
+    
+</head>
+<body>
+  <div id="main">
+    <div id="header">
+      <!-- begin Nav -->
+        <ul id="nav">
+            <li><a href="#">Home </a></li>
+            <li><a href="#content-band">Band</a></li>
+            <li><a href="#tour">Tour</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="#">
+                More
+                <i class="fa-solid fa-caret-down"></i>
+              </a>
+              <ul class="subnav">
+                <li><a href="#">Merchandise</a></li>
+                <li><a href="#">Extra</a></li>
+                <li><a href="#">Media</a></li>
+              </ul>
+            </li>
+        </ul>
+      <!-- end Nav -->
+      <!-- begin search btn -->
+      <div class="search-btn">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <!-- end search btn -->
+
+      <!-- begin bar btn -->
+      <div class="mobile">
+        <label for="nav-input-hidden" class="bar-btn">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" class="nav-input" id="nav-input-hidden" hidden>
+        <label for="nav-input-hidden" class="nav-overlay"></label>
+        <div class="nav-mobile">
+          <div class="nav-header">
+            <label for="nav-input-hidden" class="close-btn">
+              <i class="fa-solid fa-x"></i>
+            </label>
+          </div>
+          <ul id="nav-mobile">
+            <li><a href="#"><label for="nav-input-hidden">Home</label> </a></li>
+            <li><a href="#content-band"><label for="nav-input-hidden">Band</label></a></li>
+            <li><a href="#tour"><label for="nav-input-hidden">Tour</label></a></li>
+            <li><a href="#contact"><label for="nav-input-hidden">Contact</label></a></li>
+            <li>
+              <a href="#">
+                <label for="nav-input-hidden-more">
+                More
+                <i class="fa-solid fa-caret-down"></i>
+                </label>
+              </a>
+              <input type="checkbox" class="nav-input-more" id="nav-input-hidden-more" hidden>
+              <ul class="subnav-mobile">
+                <li><a href="#"> <label for="nav-input-hidden"> Merchandise</label></a></li>
+                <li><a href="#"><label for="nav-input-hidden">Extra</label></a></li>
+                <li><a href="#"><label for="nav-input-hidden">Media</label></a></li>
+              </ul>
+            </li>
+
+        </ul>
+
+        </div>
+
+      </div>
+      <!-- end bar btn -->
+
+
+
+
+    </div>
+
+    <div id="slider">
+      <div class="text-content">
+        <h3 class="text-heading">Los Angeles</h3>
+        <div class="text-description">We had the best time playing at Venice Beach!</div>
+      </div>
+
+    </div>
+
+    <div id="content">
+      <!-- begin the band -->
+      <div id="content-band">
+      <h2 class="section-heading">THE BAND</h2>
+      <p class="section-sub-heading">We love music</p>
+      <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      
+      <div class="member-list">
+      <div class="about-mcian">
+        <p class="about-name">Name</p>
+        <img src="./assets/img/bandmember.jpg" alt="" class="about-img">
+      </div>
+      <div class="about-mcian">
+        <p class="about-name">Name</p>
+        <img src="./assets/img/bandmember.jpg" alt="" class="about-img">
+      </div>
+      <div class="about-mcian">
+        <p class="about-name">Name</p>
+        <img src="./assets/img/bandmember.jpg" alt="" class="about-img">
+      </div>
+      </div>
+      <div class="clear"></div>
+      </div>
+      <!-- end the Band -->
+
+      <!-- begin the Tour -->
+      <div id="tour">
+
+      <div id="content-tour">
+        <div>
+      <h2 class="section-heading">TOUR DATES</h2>
+      <p class="section-sub-heading">Remember to book your tickets!</p>
+      <br>
+      <ul id="month-ticket">
+        <li class="month-available">September
+          <span class="sold-out">Sold out</span>
+
+        </li>
+        <li class="month-available">October
+          <span class="sold-out">Sold out</span>
+
+        </li>
+        <li class="month-available">December
+          <span class="number-available">3</span>
+        </li>
+      </ul>
+      <div class="clear"></div>
+      </div>
+
+      <div id="ticket-block">
+
+      <div class="ticket-place">
+        <img class="ticket-img" src="./assets/img/newyork.jpg" alt="">
+        <div class="ticket-info">
+          <p class="ticket-detail-st"> <b>New York</b> </p>
+          <p class="ticket-detail-sd">Fri 27 Nov 2016</p>
+          <p class="ticket-detail-rd">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+          <button class="ticket-button js-buy-ticket">Buy Tickets</button>
+        </div>
+      </div>
+
+      <div class="ticket-place">
+        <img class="ticket-img" src="./assets/img/paris.jpg" alt="">
+        <div class="ticket-info">
+          <p class="ticket-detail-st"><b>Paris</b></p>
+          <p class="ticket-detail-sd">Sat 28 Nov 2016</p>
+          <p class="ticket-detail-rd">Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
+          <button class="ticket-button js-buy-ticket">Buy Tickets</button>
+        </div>
+      </div>
+
+      <div class="ticket-place">
+        <img class="ticket-img" src="./assets/img/sanfran.jpg" alt="">
+        <div class="ticket-info">
+          <p class="ticket-detail-st"><b>San Francisco</b></p>
+          <p class="ticket-detail-sd">Sun 29 Nov 2016</p>
+          <p class="ticket-detail-rd">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+          <button class="ticket-button js-buy-ticket">Buy Tickets</button>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    </div>
+      </div>
+      <!-- end the Tour -->
+
+      <!-- begin the Contact -->
+      <div id="contact">
+        <h2 class="section-heading">CONTACT</h2>
+        <p class="section-sub-heading">Fan? Drop a note!</p>
+
+        <div id="contact-block">
+        <ul class="contact-address">
+          <li class="address-detail"> <i class="fa-solid fa-location-dot" style="padding: 8px 16px ;"></i>Chicago, US</li> 
+          <li class="address-detail"> <i class="fa-solid fa-phone" style="padding: 8px 16px ;" ></i>Phone: +00 151515</li> 
+          <li class="address-detail"> <i class="fa-solid fa-envelope" style="padding: 8px 16px ;"></i>Email: mail@mail.com</li> 
+        </ul>
+
+        <div id="contact-register">
+          <div class="contact-both">
+            <div class="contact-detail">
+              <input class="contact-text" type="text"  placeholder="Name" ></input>
+            </div>
+            <div class="contact-detail">
+              <input class="contact-text" type="text"  placeholder="Email" ></input>
+            </div>
+          </div>
+        
+
+          <div id="contact-message">
+            <input class="contact-text" type="text"  placeholder="Message" ></input>
+          </div>
+
+          <div id="button-send"><p style="font-size: 21px;">Send</p></div>
+          
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+      <!-- end the Contact -->
+
+      <!-- begin image  -->
+      <img id="map" src="./assets/img/map.jpg" alt="map">
+      <!-- end image -->
+
+    </div>
+
+    </div>
+
+    <div id="footer">
+      <p class="footer-icon">
+        <a href="#"> <i class="fa-brands fa-facebook"></i> </a>
+        <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+        <a href="#"> <i class="fa-brands fa-snapchat"></i> </a>
+        <a href="#"> <i class="fa-brands fa-pinterest"></i> </a>
+        <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
+        <a href="#"> <i class="fa-brands fa-linkedin-in"></i> </a>
+      </p>
+      <p class="footer-text">Powered by <a style="color: #757575; ;" href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
+
+    </div>
+  </div>
+
+  <!-- begin modal -->
+<div class="modal js-modal" >
+  <div class="modal-content js-modal-content ">
+  <div class="modal-container">
+  <div class="x-icon js-modal-close"> <i class="fa-solid fa-xmark"></i> </div>
+  <div class="modal-header">
+    <i class="fa-solid fa-bag-shopping" style="padding: 8px ;"></i>
+    Tickets
+  </div>
+  </div>
+  <div class="modal-footer">
+  <label class="modal-label" for="how-many">
+    <i class="fa-solid fa-cart-shopping"></i>
+    Tickets, $15 per person
+  </label>
+  <input class="modal-input" id="how-many" type="text" placeholder="How many?">
+  <label class="modal-label" for="email">
+    <i class="fa-solid fa-user-large"></i>
+    Send To
+  </label>
+  <input class="modal-input" id="email" type="text" placeholder="Email">
+  <div class="modal-pay">
+  <button class="modal-button">
+    Pay
+    <i class="fa-solid fa-check"></i>
+  </button>
+  </div>
+  <div class="modal-help">Need <a href="" style="color: #2196F3 ;">help?</a></div>
+  </div>
+  </div>
+</div>
+
+<script>
+  const buyBtns =document.querySelectorAll('.js-buy-ticket')
+  const modal = document.querySelector('.js-modal')
+  const modalContent= document.querySelector('.js-modal-content')
+
+  const modalClose = document.querySelector ('.js-modal-close')
+
+  function showBuyTicket(){
+    modal.classList.add('open')
+  }
+
+  function hideBuyTicket(){
+    modal.classList.remove('open')
+  }
+
+
+  for(const buyBtn of buyBtns){
+    buyBtn.addEventListener('click', showBuyTicket )
+  }
+
+  modalClose.addEventListener('click', hideBuyTicket)
+
+  modal.addEventListener('click', hideBuyTicket)
+
+  modalContent.addEventListener('click', function (event) {
+    event.stopPropagation()
+  })  
+</script>
+<!-- end modal -->
+</body>
+</html>

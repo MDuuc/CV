@@ -1,0 +1,556 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+#main {
+    overflow: hidden;
+
+}
+
+.clear{
+    clear: both;
+}
+/* bo dau . */
+#nav{
+    display: inline-block;
+}
+
+#nav, .subnav{
+    list-style-type: none;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    height: 46.5px;
+    background-color: #000;
+    z-index: 1; /* de cai thanh header len tren cai anh*/
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li{
+    position: relative ;
+
+}
+
+
+#nav li a{
+    display: inline-block;
+    text-decoration: none;
+    line-height: 46.5px;
+    padding: 0 24px;
+    
+}
+
+/* in hoa */
+#nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+
+}
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+    color: #000;
+    background-color: #ccc;
+    width: 100%;
+}
+
+/* cho cai muc duoi more hien */
+#nav li:hover .subnav{
+    display: block;
+}
+
+/* do bong */
+#nav .subnav{
+    position:absolute;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) ;
+    display: none;
+
+
+}
+
+#nav .subnav a{
+    color: #000;
+    min-width: 160px;
+    line-height: 38px;
+    padding: 0px 16px;
+
+}
+#nav .fa-solid{
+    font-size: 14px;
+
+}
+#header .close-btn .fa-solid,
+#header .bar-btn .fa-solid,
+#header .search-btn .fa-solid{
+    color: #fff;
+    line-height: 46.5px;
+    padding: 0 24px;
+
+}
+/* cho search icon về phía bên phải */
+#header .bar-btn,
+#header .search-btn{
+    float:right
+
+}
+#header .bar-btn:hover,
+#header .search-btn:hover{
+    color: #fff;
+    background-color: #f44336;
+    cursor: pointer;
+}
+#header .close-btn,
+#header .bar-btn {
+    display: none;
+}
+
+    
+#slider {
+    position: relative;
+    margin-top: 46.5px;
+    padding-top: 50%;
+    background: url(/assets/img/chicago.jpg) top center /cover no-repeat;  /* cho ảnh sát bên trên và cho vào giữa ảnh  */
+}
+#slider .text-content{
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 32px;
+
+}
+
+#slider .text-heading{
+    font-size: 24px ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 25px 0;
+    font-weight: 400;
+
+}
+
+#slider .text-description{
+    font-weight: bolder;
+    font-size: 15px;
+    margin-bottom: 22px;
+
+}
+
+
+#content #content-band {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+
+
+}
+
+
+
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    line-height: 45px;
+    margin-block-end: 10px;
+    margin-block-start: 10px;
+    margin-bottom: 10px;
+}
+
+#content .section-sub-heading{
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 30px;
+    margin-block-end: 15px;
+    margin-block-start: 15px;
+    color:grey;
+
+
+}
+
+ #content .about-text{
+    margin-block-end: 15px;
+    margin-block-start: 15px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#content .about-name{
+    margin: 15px 0;
+    font-size: 15px;
+    text-align: center;
+
+}
+    
+    
+ #content .about-img{
+    margin-bottom:  16px;
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    
+ }
+ #content .about-mcian{
+    justify-content: center;
+    display: inline-block;
+
+
+ }
+
+ #content #content-band{
+    padding: 64px 0px;
+
+ }
+ 
+ #tour{
+    background-color: #000;
+ }
+
+ #content-tour{
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+ }
+
+ #content #content-tour{
+    
+    width: 800px;
+    padding: 64px 0;
+    max-width: 100%;
+ }
+
+ #content #content-tour .section-heading{
+    color: #fff;
+ }
+
+#content .month-available{
+    color: grey;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    list-style-type: none;
+    padding: 8px 16px;
+
+}
+
+#content .sold-out{
+    color: #fff;
+    background-color: #f44336;
+    padding: 4px 8px;
+    margin-left: 16px;
+    display: inline-block;
+    font-size: 15px;
+}
+
+#content .number-available{
+    background-color: #000;
+    color: #ddd;
+    border-radius: 50%;
+    float: right;
+    padding: 2px 8px;
+    margin-right: 16px;
+    
+}
+#tour #ticket-block{
+    margin-left: -8px;
+    margin-right: -8px;
+    padding: 32px 0;
+      
+}
+
+#ticket-block .ticket-place{
+    width: 33.3333% ;
+    float: left;
+    padding: 0 8px;
+    
+   
+   
+
+}
+
+#tour .ticket-img{
+    display: block;
+    width: 100%
+}
+
+#tour .ticket-img:hover{
+    opacity: 0.6;
+}
+
+
+#tour .ticket-info{
+    background-color: #fff;
+    padding: 0 16px;
+    
+}
+
+#tour .ticket-detail-st{
+    padding-top:15px;
+
+
+}
+
+#tour .ticket-detail-sd{
+    padding-top:15px;
+    opacity: 0.6;
+
+    
+
+}
+
+#tour .ticket-detail-rd{
+    padding-top:15px;
+    
+
+
+}
+
+#tour .ticket-button{
+    margin: 15px 0;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 15px;
+}
+
+#tour .ticket-button:hover{
+    background-color: #ccc;
+    color: #000;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+/* end tour */
+
+/* begin contact */
+#contact .address-detail{
+    
+    font-size: 18px;
+}
+#contact-block{
+    padding: 32px 0;
+
+ } 
+
+#contact{
+    padding: 64px 16px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto; 
+    max-width: 100%;
+}
+
+#contact .contact-address{
+    width: 50%;
+    float: left;
+    list-style-type: none;
+    margin-bottom: 4px;
+
+}
+
+#contact #contact-register{
+     width: 50%;
+     float: left;
+
+
+}
+#contact-register .contact-both{
+    margin-left: -8px;
+    margin-right: -8px;
+    height: 44.4px;
+    
+
+}
+
+#contact .contact-detail{
+    width: 50%;
+    float: left;
+    padding: 0 8px 8px 8px;
+    
+
+}
+
+#contact .contact-text{
+    padding: 8px 8px;
+    border: 1px solid #ccc;
+    opacity: 0.8;
+}
+
+
+#button-send{
+    background-color: #000;
+    color: #fff;
+    padding: 6px 16px;
+    float: right;
+    margin-top: 8px ;
+    font-size: 16px;
+}
+#button-send:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+/* end contact */
+#map{
+    filter: grayscale(50%);
+    width: 100%;
+}
+
+#footer {
+    padding: 64px 16px;
+
+}
+
+#footer .footer-icon{
+    text-align: center;
+    font-size: 25px;
+    
+    
+}
+
+#footer .footer-icon a{
+    text-decoration: none;
+    color: #757575;
+    
+} 
+
+#footer .footer-text{
+    text-align: center;
+    margin: 15px 0;
+    color: #757575;
+
+}
+.modal{
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.open{
+    display: flex;
+}
+
+.modal-content{
+    width: 900px;
+    min-height: 200px;
+    background-color: #fff;
+    position: relative;
+    margin: 32px;
+    animation: modalFadeIn ease 0.5s;
+}
+
+.modal-header {
+    font-size: 30px;
+    text-align: center;
+    padding: 45px 32px;
+    background-color: #009688;
+    color: #fff;   
+
+}
+
+.x-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 16px 24px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.x-icon:hover {
+    opacity: 1;
+}
+
+.modal-footer {
+    padding: 16px;
+}
+
+label.modal-label {
+    display: block;
+    padding-bottom: 8px;
+    padding-top: 16px;
+}
+
+.modal-input {
+    font-size: 15px;
+    width: 100%;
+    padding: 8px 8px;
+    border: 1px solid #ccc;
+}
+
+
+
+.modal-button {
+    border: none;
+    background-color: #009688;
+    width: 100%;
+    font-size: 18px;
+    padding: 16px 0;
+    color: white;
+}
+
+.modal-pay {
+    padding: 16px 0;
+}
+
+.modal-button:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+
+.modal-help {
+    text-align: right;
+}
+
+.mobile{
+    display: none;
+}
+
+@keyframes modalFadeIn {
+    from{
+        opacity:0.5 ;
+        transform: translateY(-150px);
+
+
+
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+
+    }
+    
+}
